@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+/*This project will give you a reminder of two numbers you enter*/
+
+import java.util.scanner;
+public class Main{
+public static void main{
+Scanner input=new Scanner(System.in);
+System.out.println("Enter first_number:");
+int first_number=input.nextInt();
+System.out.println("enter second_number:");
+int second_number=input.nextInt();
+int reminder_total=first_number%second_number;
+System.out.println("The reminder is:"+reminder_total);
+input.close();
+}
+}
