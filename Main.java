@@ -1,15 +1,19 @@
-/*project will give you the answer of any two numbers you enter to be subtracted*/
 import java.util.Scanner;
-public class Main{
-    public static void main(String[]args){
-        Scanner input=new Scanner(System.in);
-        System.out.println("Enter your first_number:");
-        int first_number=input.nextInt();
-        System.out.println("Enter your second_number:");
-        int second_number=input.nextInt();
-        int number_difference=first_number-second_number;
-        System.out.println("the answer is:"+number_difference);
-        input.close();
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your first_integer:");
+        int first_integer = input.nextInt();
+        System.out.println("Enter your second_integer:");
+        int second_integer = input.nextInt();
+        int integer_difference = first_integer - second_integer;
+        System.out.println("The answer difference:"+integer_difference);
+        /*to determine if the difference is even or odd*/
+        if (integer_difference % 2 == 0) {
+            System.out.println("which is an even number!!");
+        } else if (integer_difference % 2 >= 1) {
+            System.out.println("which is an odd number!!");}
     }
 }
+
+
